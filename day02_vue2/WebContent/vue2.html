@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/dist/vue.js"></script>
+</head>
+<body>
+
+	<div id="app">
+		姓名：<input type="text" v-model="name"> 
+ 		
+	</div>
+	
+	<script type="text/javascript">
+		var app = new Vue({
+			el:"#app",
+			data:{
+				name:"王静",	
+			}
+		});
+	</script>
+</body>
+</html>

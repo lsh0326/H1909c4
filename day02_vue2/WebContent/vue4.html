@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/dist/vue.js"></script>
+</head>
+<body>
+
+	<div id="app">
+		{{num}}	
+		<form>
+			姓名：<input type="text" v-model="user.name">
+			班级：<input type="text" v-model="user.grade">
+		</form>
+	</div>
+	
+	<script type="text/javascript">
+		var app = new Vue({
+			el:"#app",
+			data:{
+				user:{
+					name:"张三",
+					grade:"H1909c"
+				}
+			},
+			created(){
+				this.num=19
+			}
+		});
+	</script>
+</body>
+</html>
